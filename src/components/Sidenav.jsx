@@ -10,7 +10,7 @@ import { RiPagesLine } from "react-icons/ri" /** ticket */
 const navItems = [
     {
         label: 'Dashboard',
-        navigate: '/',
+        navigate: '/dashboard',
         icon: <AiOutlineDashboard size={24} />,
     },
     {
@@ -33,14 +33,6 @@ const navItems = [
 const Sidenav = forwardRef(({ showNav }, ref) => {
 
     const location = useLocation()
-
-    const testMap = navItems.map(({label, navigate, icon}) => navigate)
-
-    console.log(testMap)
-    useEffect(() => {
-        // This will be triggered whenever the location changes
-        console.log('Location changed:', location.pathname);
-      }, [location.pathname]);
 
     return (
         <div ref={ref} className='fixed w-56 h-full bg-white shadow-sm'>
