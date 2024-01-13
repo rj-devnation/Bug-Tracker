@@ -20,8 +20,9 @@ function App() {
 
   return (
     <>
+    <Layout />
       {/* {!isLoggedIn && <Layout><Dashboard /></Layout>} */}
-      {!isLoggedIn && 
+      {/* {!isLoggedIn && 
       <Routes>
         <Route index path='/Bug-Tracker/login' element={<Login onLogin={handleLogin} />} />
       </Routes>}
@@ -34,7 +35,7 @@ function App() {
             <Route path='/Bug-Tracker/admin' element={<Admin />} />
           </Routes>
         </Layout>
-    )}
+    )} */}
     </>
   )
 }
