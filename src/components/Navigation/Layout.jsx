@@ -8,8 +8,6 @@ export default function Layout({ children }) {
     const [showNav, setShowNav] = useState(true)
     const [isMobile, setIsMobile] = useState(false)
 
-    console.log(children)
-
     function handleResize() {
         if(innerWidth <= 640) {
             setShowNav(false)
