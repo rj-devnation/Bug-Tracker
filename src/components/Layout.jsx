@@ -46,7 +46,7 @@ export default function Layout({ children }) {
                 <Sidenav showNav={showNav}/>
             </Transition>
             <main className={`pt-16 transition-all duration-[400ms] ${showNav && !isMobile ? 'pl-56' : ''}`}>
-                <div className='px-4 md:px-16'>{children}</div>
+                <div className='px-8 md:px-8'>{children}</div>
             </main>
             <Outlet />
         </>

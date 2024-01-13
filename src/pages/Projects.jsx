@@ -3,7 +3,7 @@ function Projects(){
 
     return (
         <>
-            <p className="text-gray-700 text-3xl mb-16 font-bold">Projects</p>
+            <p className="text-gray-700 text-3xl mb-16 font-bold pt-10">Projects</p>
             <div className="grid lg:grid-cols-3 gap-5 mb-16">
                 <div className="rounded bg-white h-40 shadow-sm"></div>
                 <div className="rounded bg-white h-40 shadow-sm"></div>

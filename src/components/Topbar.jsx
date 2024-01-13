@@ -8,9 +8,9 @@ import { Link } from "react-router-dom"
 function Topbar ({showNav, setShowNav}) {
     return (
         <>
-            <div className={`fixed w-full h-16 flex justify-between items-center transition-all duration-[400ms] 
+            <div className={`fixed w-full h-20 shadow-sm bg-white flex justify-between items-center transition-all duration-[400ms] 
             ${showNav ? 'pl-56' : ''}`}>
-                <div className="pl-4 md:pl-16">
+                <div className="pl-8 md:pl-8">
                     <AiOutlineMenu className="h-8 w-8 text-gray-700 cursor-pointer" onClick={() => setShowNav(!showNav)} />
                 </div>
                 <div className="flex items-center pr-4 md:pr-16">

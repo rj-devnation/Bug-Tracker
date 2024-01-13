@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { AiOutlineMenu, AiOutlineCode, AiOutlineContacts, AiOutlineDashboard, AiOutlineDash } from 'react-icons/ai'
 import { MdOutlineSpaceDashboard } from "react-icons/md"
 import { RiPagesLine } from "react-icons/ri" /** ticket */
+import { GiAlienBug } from "react-icons/gi";
 
 const navItems = [
     {
@@ -37,11 +38,10 @@ const Sidenav = forwardRef(({ showNav }, ref) => {
     return (
         <div ref={ref} className='fixed w-56 h-full bg-white shadow-sm'>
             <div className='flex justify-center mt-6 mb-14'>
-                <img
-                    className='w-32 h-auto'
-                    src='/react.svg'
-                    alt='logo'
-                />
+                <GiAlienBug size={45} className='text-blue-700' />
+                <div className='text-blue-700 flex items-center pl-2 font-bold text-xl tracking-wider'>
+                    Bug <span className='pl-2 text-orange-700'>Tracker</span>
+                </div>
             </div>
 
             <div className='flex flex-col'>
