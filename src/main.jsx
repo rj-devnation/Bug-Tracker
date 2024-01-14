@@ -5,9 +5,9 @@ import './index.css'
 import { HashRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <HashRouter basename='/Bug-Tracker/'>
-      <App />
-    </HashRouter>
-  </React.StrictMode>,
+  <HashRouter>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+  </HashRouter>
 )
