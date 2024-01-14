@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 /** Components */
 import Layout from './components/Navigation/Layout'
@@ -23,15 +23,15 @@ function App() {
       {/* {!isLoggedIn && <Layout><Dashboard /></Layout>} */}
       {!isLoggedIn && 
       <Routes>
-        <Route index path='/Bug-Tracker/login' element={<Login onLogin={handleLogin} />} />
+        <Route index path='/login' element={<Login onLogin={handleLogin} />} />
       </Routes>}
       {isLoggedIn && (
         <Layout>
           <Routes>
-            <Route index path='/Bug-Tracker/dashboard' element={<Dashboard />} />
-            <Route path='/Bug-Tracker/projects' element={<Projects />} />
-            <Route path='/Bug-Tracker/tickets' element={<Tickets />} />
-            <Route path='/Bug-Tracker/admin' element={<Admin />} />
+            <Route index path='/dashboard' element={<Dashboard />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/tickets' element={<Tickets />} />
+            <Route path='/admin' element={<Admin />} />
           </Routes>
         </Layout>
     )}

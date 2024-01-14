@@ -11,22 +11,22 @@ import { GiAlienBug } from "react-icons/gi";
 const navItems = [
     {
         label: 'Dashboard',
-        navigate: '/Bug-Tracker/dashboard',
+        navigate: '/dashboard',
         icon: <AiOutlineDashboard size={24} />,
     },
     {
         label: 'Projects',
-        navigate: '/Bug-Tracker/projects',
+        navigate: '/projects',
         icon: <AiOutlineCode size={24} />,
     },
     {
         label: 'Tickets',
-        navigate: '/Bug-Tracker/tickets',
+        navigate: '/tickets',
         icon: <RiPagesLine size={24} />,
     },
     {
         label: 'Administration',
-        navigate: '/Bug-Tracker/admin',
+        navigate: '/admin',
         icon: <AiOutlineContacts size={24} />,
     },
 ]
