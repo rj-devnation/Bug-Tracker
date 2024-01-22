@@ -1,3 +1,3 @@
 # Bug-Tracker
 
-# Business Requirements
+## Business Requirements
